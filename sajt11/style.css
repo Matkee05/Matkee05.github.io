@@ -1,0 +1,106 @@
+/* Osnovni stil za telo stranice */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Stilovi za header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 20px;
+}
+
+/* Stil za dugmadi u header-u */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #2500fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Glavni sadržaj stranice */
+#tutorial {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Stilovi za pre i posle koda */
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Footer stilovi */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* tamni/svetli rezim */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #eee;
+}
+
+/* Dugme za povratak na prethodnu stranu */
+button.back-button {
+    background-color: #333;
+    color: white;
+}
+
+button.back-button:hover {
+    background-color: #ff0000;
+}
+
+/* glavna navigacija */
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #00ff00;
+    text-decoration: underline;
+}
