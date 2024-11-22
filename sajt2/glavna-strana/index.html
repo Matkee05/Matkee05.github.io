@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uči HTML & CSS</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Dobrodošli na stranicu za učenje HTML-a i CSS-a</h1>
+        <nav>
+            <ul>
+                <li><a href="../tutoriali/tutorial1.html">Tutorijal</a></li>
+                <li><a href="../testovi/test.html">Test</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()">Prebaci temu</button>
+    </header>
+
+    <section id="searchSection">
+        <input type="text" id="searchInput" onkeyup="searchContent()" placeholder="Pretraži sadržaj...">
+    </section>
+
+    <section id="tutorial" class="show">
+        <h2>Osnovni HTML tagovi</h2>
+        <p>HTML koristi oznake kao što su &lt;h1&gt; za naslove, &lt;p&gt; za paragrafe, itd.</p>
+        <pre>
+            &lt;h1&gt;Ovo je glavni naslov&lt;/h1&gt;
+            &lt;p&gt;Ovo je paragraf teksta&lt;/p&gt;
+        </pre>
+
+        <h2>Osnovni CSS stilovi</h2>
+        <p>CSS se koristi za stilizovanje elemenata. Na primer:</p>
+        <pre>
+            h1 { 
+                color: blue; 
+                font-size: 30px;
+            }
+            p {
+                color: gray;
+                font-family: Arial, sans-serif;
+            }
+        </pre>
+    </section>
+
+    <!-- Forma za unos podataka -->
+    <section id="formSection">
+        <h2>Unesite svoje ime i e-mail</h2>
+        <form id="userForm" onsubmit="return validateForm()">
+            <label for="name">Ime:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <input type="submit" value="Pošaljite">
+        </form>
+        <p id="formResult"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024, Kreirano od: Vaše ime</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
