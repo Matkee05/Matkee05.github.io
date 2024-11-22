@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - HTML i CSS</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML i CSS Test</h1>
+        <nav>
+            <ul>
+                <li><a href="../glavna-strana/index.html">Početna</a></li>
+                <li><a href="../tutoriali/tutorial1.html">Tutorijal</a></li>
+            </ul>
+        </nav>
+        <p>Odgovori na pitanja ispod.</p>
+    </header>
+
+    <section id="quiz">
+        <h2>Pitanje 1:</h2>
+        <p>Koji tag se koristi za paragraf?</p>
+        <label><input type="radio" name="question1" value="a"> &lt;h1&gt;</label><br>
+        <label><input type="radio" name="question1" value="b"> &lt;p&gt;</label><br>
+        <label><input type="radio" name="question1" value="c"> &lt;div&gt;</label><br>
+
+        <h2>Pitanje 2:</h2>
+        <p>Koji CSS selektor se koristi za promenu boje pozadine?</p>
+        <label><input type="radio" name="question2" value="a"> color</label><br>
+        <label><input type="radio" name="question2" value="b"> background-color</label><br>
+        <label><input type="radio" name="question2" value="c"> background-image</label><br>
+
+        <button onclick="checkAnswers()">Proveri odgovore</button>
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <button onclick="window.history.back()">Vrati se na prethodnu stranu</button>
+        <button onclick="window.location.href='tutorial1.html'">Pređi na tutorijal</button>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
