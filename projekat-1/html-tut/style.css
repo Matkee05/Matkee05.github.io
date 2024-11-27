@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333 !important;
+    color: #fff !important;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: black;
+    border: solid black;
+    border-radius: 10px;
+}
+
+/* Stilizovanje za kod kutiju */
+.code-box {
+    background-color: #222;
+    border: 2px solid #444;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.code-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #f8f8f2;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap; /* Omogućava prelamanje dugačkih linija koda */
+}
+
+/* Stilizovanje za dugme */
+#show-explanation {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#show-explanation:hover {
+    background-color: #0056b3;
+}
+
+/* Stilizovanje za objašnjenje */
+#explanation {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#explanation h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#explanation-list li {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* General responsive styles for tablets and mobile */
+@media (max-width: 1200px) { /* Large tablets, small laptops */
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 992px) { /* Tablets and medium devices */
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Phones (portrait) */
+@media (max-width: 768px) {
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+/* Small Phones (portrait mode) */
+@media (max-width: 480px) {
+    .main-nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .main-nav h2 {
+        font-size: 16px;
+    }
+}
+
+/* Landscape phone orientation */
+@media (max-width: 600px) and (orientation: landscape) {
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .main-nav h2 {
+        font-size: 18px;
+    }
+}
+
+/* Large screens, Desktop */
+@media (min-width: 1201px) {
+    .main-nav h2 {
+        font-size: 28px;
+    }
+
+    .main-nav a {
+        margin-right: 15px;
+        padding: 10px 15px;
+    }
+}
