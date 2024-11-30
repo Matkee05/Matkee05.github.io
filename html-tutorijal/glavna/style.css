@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+                                        /* HEADER-DEO */
+.main-nav {
+    background-color: #878787a3;
+    padding: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+.main-nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    background-color: #333;
+    border: solid #333;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav a:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav h2 {
+    text-align: right;
+    color: #fff;
+    font-family: serif;
+}
+
+main {
+    background-image: url(slika.jpg);
+    background-size: cover; /* Prilagođava veličinu slike tako da pokrije ceo ekran */
+    background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+    background-position: center; /* Postavlja sliku u centar */
+}
+                                        /* GLAVNI-DEO */
+main .glavni-deo {
+    text-align: center;
+    color: #222222;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main .glavni-deo h1 {
+    margin-bottom: 20px;
+    font-family: fantasy;
+    text-shadow: 4px -2px 6px #3e3e3e;
+}
+
+main .glavni-deo a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e2e2e;
+    border: 5px solid #2e2e2e;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    box-shadow: 6px -4px 7px 1px #3e3e3e;
+}
+
+main .glavni-deo a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #252525;
+    background-color: #007bff;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    box-shadow: 6px -4px 7px 1px #3e3e3e;
+    transition: background-color 0.3s, color 0.3s;
+}
+                                        /* HTML-DEO */
+main .html-deo {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+main .html-deo h1 {
+    font-family: serif;
+}
+
+main .custom-row {
+    gap: 20px; /* Razmak između bokseva */
+}
+
+main .custom-col {
+    position: relative;
+    box-shadow: 0px 0px 15px 4px rgb(0 0 0 / 50%); /* Horizontalni pomak, vertikalni pomak, razmaz, boja senke */
+    background-color: #515151;
+    height: 450px;
+    width: 370px;
+    transition: all 0.3s ease;
+}
+
+main .custom-col:hover {
+    top: -10px;
+    transform: translateY(-10px);
+}
+
+.custom-col li {
+    font-size: larger;
+    padding-top: 5px;
+    list-style: inside;
+}
+
+main .custom-box {
+    background-color: #323232;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 10px 3px rgb(0 0 0 / 50%); /* Horizontalni pomak, vertikalni pomak, razmaz, boja senke */
+}
+                                        /* CSS-DEO */
+main .css-deo {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+                                        /* JS-DEO */
+main .js-deo {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+                                        /* Sirina ekrana za telefon */
+@media (max-width: 1200px) {
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Phones (portrait) */
+@media (max-width: 768px) {
+    .main-nav .container {
+        text-align: center;
+    }
+
+    .main-nav h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .main-nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .main-nav h2 {
+        font-size: 16px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Large screens, Desktop */
+@media (min-width: 1201px) {
+    .main-nav h2 {
+        font-size: 28px;
+    }
+
+    .main-nav a {
+        margin-right: 15px;
+        padding: 10px 15px;
+    }
+
+    .sidebar {
+        width: 25%;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        padding-top: 20px;
+        margin-top: 60px; /* Sidebar sada počinje odmah ispod header-a */
+    }
+
+    .content {
+        margin-left: 25%;
+        padding: 20px;
+    }
+}
